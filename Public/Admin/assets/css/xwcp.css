@@ -1,0 +1,11 @@
+.xinwenbg{border: 1px solid #999;margin-top: -5px;}
+.xinwenbg td{text-align: center;padding: 5px;}
+.xinwenbg tr td a{color: coral;}
+.xinwenbg tr td a:hover{color: red;}
+.xinwenfy{text-align: right;margin: -10px 0 10px 0;}
+.xinwenfy a{width: 25px;height: 25px;border: 1px solid #ccc;display: inline-block;text-align: center;line-height: 25px;color:darkred;}
+.xinwenfy span{width: 25px;height: 25px;display: inline-block;text-align: center;line-height: 25px;}
+.xinwenfy a:hover{background:#f5fffd;}
+.xinwenbg input[type='checkbox']{width:16px;height:16px;}
+.xw-input{font-size: 15px;border: 1px solid red;background: orangered;color: white;padding: 8px 12px 8px 12px;border-radius: 4px;}
+.xw-a{font-size: 14px;float: right;margin-top: 10px;}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>欢迎来到官网后台</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/linearicons/style.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="__ASSETS__/assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="__ASSETS__/assets/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="__ASSETS__/assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="__ASSETS__/assets/img/favicon.png">
+	<style>
+		.pan-form{padding-left:50px;}
+		.pan-form p{margin-top:20px;}
+		.pan-form p input{width:70%;height: 30px;line-height: 30px;margin-left: 10px;border: none;border-bottom: 1px dashed #666;outline: none;}
+		.pan-form p .submits{width: 150px;height: 32px;background: red;border-radius:5px;color: white;border: none;float: right;}
+		
+		.touxiang{width: 120px;height: 120px;border-radius: 50%;overflow: hidden;margin: 0 0 0 50px;}
+		.touxiang>img{width: 120px;height: 120px;}
+		.touxiang ,.touxiangxg{float: left;}
+		.touxiangxg{width: 150px;height: 32px;background: red;border-radius:5px;color: white;border: none;float: right;text-align: center;line-height: 32px;margin-top: 90px;}
+		.touxiangxg:hover{color: white;}
+	</style>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+
+		<!-- 头部-结束 --> <include file="Public/header"/> <!-- 头部-开始 -->
+		<!-- 左边-开始 --> <include file="Public/left"/> <!-- 左边-结束 -->
+
+		<!-- 内容-开始 -->
+		<div class="main">
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">个人设置</h3>
+					<div class="row">
+						<div class="row" style="width: 95%;margin: 0 auto;">
+							<!-- 框1 -->
+							<div class="panel">							
+								<div class="panel-body row">
+									<div class="touxiang">										
+										<img src="__ASSETS__/assets/img/wenhao.png"/>
+									</div>
+										<a href="#" class="touxiangxg">修改头像</a>
+								</div>
+							</div>
+							<!-- 框2 -->
+							<div class="panel">							
+								<div class="panel-body row">
+									<form action="#" method="post" class="pan-form">
+										<p>登录账号：<input type="text" name=""/></p>
+										<p>登录密码： <input type="text" name=""/></p>
+										<p><input type="submit" value="保存修改" class="submits"/></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 内容-结束 -->
+
+		<!-- 底部-开始 --> <include file="Public/footer"/> <!-- 底部-结束 -->
+	</div>
+	<!-- END WRAPPER -->
+	<!-- Javascript -->
+	<script src="__ASSETS__/assets/vendor/jquery/jquery.min.js"></script>
+	<script src="__ASSETS__/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="__ASSETS__/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="__ASSETS__/assets/scripts/klorofil-common.js"></script>
+	<script type="text/javascript">
+		$(function () { $(".daolanleft>li").eq(6).find("a").addClass("active"); })
+	</script>
+</body>
+
+</html>

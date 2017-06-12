@@ -1,0 +1,42 @@
+.picScroll{background:#fff;width:1100px; border:1px solid #999;margin:30px auto;}
+.picScroll .hd{height:36px;line-height:35px;padding:0 15px; background:#f4f4f4; }
+.picScroll .hd h2{ font-family: "Microsoft YaHei"; font-size: 17px; color: #C80300; float: left; margin-right: 15px; }
+.picScroll .bd{ position:relative; }
+.picScroll .prev,.picScroll .next{ position: absolute; top: 44px; left:-1px; display: block; width: 26px; height: 64px; background: url(../img/slide_tigger.png) 0 -65px; z-index: 9; overflow: hidden; }
+.picScroll .next{ left:auto; right:-1px; background-position: -26px -65px; }
+.picScroll .prev:hover{ background-position:0 -130px; }
+.picScroll .next:hover{ background-position:-26px -130px; }
+.picScroll .prevStop{ background-position:0 -65px !important; }
+.picScroll .nextStop{ background-position:-26px -65px !important; }
+.picScroll .scrollWrap{ padding-left:24px;overflow: hidden;}
+.picScroll ul{ overflow:hidden; zoom:1; }
+.picScroll li{ width:151px; margin: 15px 25px 10px 0; position:relative; float:left; display:inline; }
+.picScroll li .pic {position:relative;display:block;overflow:hidden;margin-bottom:6px;}
+.picScroll li .pic img {display:block;background:#ddd;width: 150px;height: 95px;}
+.picScroll li p {height:15px;margin-top:5px;color:#999;line-height:15px;overflow:hidden;}
+.picScroll li .txt1 a{color:#333;}
+.picScroll li .movielist_tt {position:relative;height:16px;line-height:16px;padding-right:30px;overflow:hidden;position:relative;}
+.picScroll li .movielist_tt a {font-size:14px;}
+.picScroll li .score {color:#FF6600;font-family:Arial;position:absolute;top:0;right:10px;}
+
+
+.tempWrap{overflow:hidden; position:relative; width:1050px;}
+.picList{width: 2112px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;}
+.picList>li{float: left; width: 151px;}
+
+
+@media screen and (max-width:1200px) {
+	.picScroll{width:905px;}
+    .tempWrap{width:840px;}
+}
+@media screen and (max-width:1050px) {
+	.picScroll{width:720px;}
+    .tempWrap{width:650px;}
+}
+@media screen and (max-width:740px) {
+	.picScroll{width:370px;}
+    .tempWrap{width:350px;}
+}
+
+.jhp{ padding:5px 0px; text-align:center; font-size:12px;clear:both; margin:0px; }
+.d_foot_o{ text-align:center; margin:35px 0 10px 0 ;clear:both; }

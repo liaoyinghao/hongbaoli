@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="brand">
+        <a href=""><img src="__ASSETS__/assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-btn">
+            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+        </div>
+        <div id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{$portrait} <span>{$user}</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{:U('Index/index')}"><i class="lnr lnr-user"></i> <span>首页</span></a></li>
+                        <li><a href="{:U('Panels/panels')}"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+                        <li><a href="{:U('Login/signout')}" onclick="return confirm('确定要退出吗？');"><i class="lnr lnr-exit"></i> <span>注销</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

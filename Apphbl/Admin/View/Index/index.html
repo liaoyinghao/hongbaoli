@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>欢迎来到官网后台</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="__ASSETS__/assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="__ASSETS__/assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="__ASSETS__/assets/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="__ASSETS__/assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="__ASSETS__/assets/img/favicon.png">
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+
+		<!-- 头部-结束 --> <include file="Public/header"/> <!-- 头部-开始 -->
+		<!-- 左边-开始 --> <include file="Public/left"/> <!-- 左边-结束 -->
+		
+		<!-- 内容-开始 -->
+		<div class="main">
+			<div class="main-content">
+				<div class="container-fluid">
+					<div class="panel panel-headline">
+						<div class="panel-heading">
+							<h3 class="panel-title">网站数据统计</h3>
+							<p class="panel-subtitle">Web access data</p>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-download"></i></span>
+										<p>
+											<span class="number">1,252</span>
+											<span class="title">新闻发行量</span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-shopping-bag"></i></span>
+										<p>
+											<span class="number">203</span>
+											<span class="title">产品发布量</span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-eye"></i></span>
+										<p>
+											<span class="number">274,678</span>
+											<span class="title">网站访问量</span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-bar-chart"></i></span>
+										<p>
+											<span class="number">132</span>
+											<span class="title">今日访问</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-9">
+									<div id="headline-chart" class="ct-chart"></div>
+								</div>
+								<div class="col-md-3">
+									<div class="weekly-summary text-right">
+										<span class="number">0</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i></span>
+										<span class="info-label">比上月超出</span>
+									</div>
+									<div class="weekly-summary text-right">
+										<span class="number">65938</span> <span class="percentage"><i class="fa fa-caret-down text-danger"></i></span>
+										<span class="info-label">比上月低出</span>
+									</div>
+									<div class="weekly-summary text-right">
+										<span class="number">10%</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i></span>
+										<span class="info-label">此月占总访问量</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 内容-结束 -->
+
+		<!-- 底部-开始 --> <include file="Public/footer"/> <!-- 底部-结束 -->
+		
+	</div>
+	<!-- END WRAPPER -->
+	<!-- Javascript -->
+	<script src="__ASSETS__/assets/vendor/jquery/jquery.min.js"></script>
+	<script src="__ASSETS__/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="__ASSETS__/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="__ASSETS__/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="__ASSETS__/assets/vendor/chartist/js/chartist.min.js"></script>
+	<script src="__ASSETS__/assets/scripts/klorofil-common.js"></script>
+	<script>
+	$(function() {
+		var data, options;
+		data = {
+			labels: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+			series: [
+				[500,200,300,1300,170,2000,30000,13000,50000,300,12000,3000]
+			]
+		};
+		options = {
+			height: 300,
+			showArea: true,
+			showLine: false,
+			showPoint: false,
+			fullWidth: true,
+			axisX: {
+				showGrid: false
+			},
+			lineSmooth: false,
+		};
+		new Chartist.Line('#headline-chart', data, options);
+	});
+	</script>
+	<script type="text/javascript">
+		$(function () { $(".daolanleft li").eq(0).find("a").addClass("active"); })
+	</script>
+</body>
+
+</html>

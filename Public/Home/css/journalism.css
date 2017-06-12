@@ -1,0 +1,15 @@
+.product{width: 100%;min-height: 300px;padding-top: 10px;}
+.cp-daohan{width: 90%;height:40px;border-bottom: 2px solid #ddd;margin: 30px auto;line-height: 40px;font-size:25px;color: #666;}
+.xinwen{width:85%;min-height:10px;margin: 0 auto;color: #333;}
+.xinwendiv{padding-bottom: 10px;border-bottom: 1px solid #ccc;margin-top:20px;}
+.xinwendiv>div{float: left;}
+.xinwenwz{outline: 1px solid blue;}
+.xinwendiv>.col-md-2{text-align: center;}
+.xinwendiv>.col-md-2>a>img{width: 132px;height: 92px;}
+.xinwendiv a{color: #333;font-weight: bold;}
+
+.chanpinfy{width: 80%;height: 30px;margin: 20px auto;text-align: right;}
+.chanpinfy a{color: black;border:1px solid #999;background: white;text-align: center;width:30px;height: 27px;line-height: 25px;display: inline-block;text-decoration: none;}
+.chanpinfy a:hover{background: #eee;}
+.chanpinfy span{color: white;border:1px solid coral;background: #ffa685;text-align: center;width:30px;height: 27px;line-height: 25px;display: inline-block;}
+
